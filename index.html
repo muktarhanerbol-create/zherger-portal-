@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ЗергерПортал AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f6fb;
+    color:#1e1e2f;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+   align-items:center;
+    padding:20px 60px;
+    background:#fff;
+    box-shadow:0 2px 12px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-weight:700;
+    font-size:22px;
+    color:#5b4bff;
+}
+
+nav a{
+    margin-left:30px;
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#5b4bff;
+}
+
+/* SECTION */
+.section{
+    padding:90px 8%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.section-text{
+    flex:1;
+}
+
+.section-text h2{
+    font-size:34px;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.section-text p{
+    margin-bottom:20px;
+    color:#666;
+    line-height:1.6;
+}
+
+.section-text textarea{
+    width:100%;
+    height:160px;
+    padding:18px;
+    border-radius:16px;
+    border:1px solid #e0e0e0;
+    background:#fff;
+    font-size:14px;
+}
+
+/* ILLUSTRATION */
+.illustration{
+    flex:1;
+    height:260px;
+    background:#eef0ff;
+    border-radius:24px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.illustration img{
+    width:90%;
+    max-width:320px;
+}
+
+/* FEEDBACK */
+.feedback{
+    background:#1e1b4b;
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.feedback h2{
+    font-size:38px;
+    margin-bottom:50px;
+    font-weight:700;
+}
+
+.mood-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:40px;
+}
+
+.mood{
+    background:#2a2763;
+    padding:25px;
+    border-radius:24px;
+    width:140px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.mood:hover{
+    transform:translateY(-6px);
+    background:#3a37a0;
+}
+
+.mood span{
+    font-size:36px;
+    display:block;
+    margin-bottom:10px;
+}
+
+.button-primary{
+   background:linear-gradient(90deg,#6a5cff,#8f84ff);
+    border:none;
+    padding:16px 45px;
+    border-radius:14px;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    margin-bottom:20px;
+}
+
+.button-secondary{
+    background:white;
+    border:none;
+    padding:16px 45p
+    border-radius:14px;
+    color:#1e1b4b;
+    font-size:17px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">-01. Эскиз және идея</div>
+    <nav>
+        <a href="#">Шабыт</a>
+        <a href="#">Процесс</a>
+        <a href="#">Нәтиже</a>
+        <a href="#">Кері байланыс</a>
+    </nav>
+</header>
+
+<!-- 1 SECTION -->
+
+<section class="section">
+    <div class="section-text">
+        <h2>Шабыт көзі мен композиция</h2>
+        <p>Буйымнын алгашкы бейнесі калай пайда болды? Ою-орнек тандауда неге суйендініз? Бул кезендегі басты
+идеянызды сипаттаныз.</p>
+        <textarea placeholder="Өз ойларыңызды осында жазыңыз..."></textarea>
+    </div>
+
+    <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/3132/3132734.png" alt="Эскиз">
+    </div>
+</section>
+
+<!-- 2 SECTION -->
+<section class="section">
+    <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048943.png" alt="Металмен жұмыс">
+    </div>
+
+    <div class="section-text">
+        <h2>02. Металмен жұмыс технологиясы</h2>
+        <p>Кесу, согу, дэнекерлеу немесе бедерлеу кезінде кандай тасілдерді уйрендініз? Технологиялык процестін ен манызды тустарын атап етініз.</p>
+        <textarea placeholder="Тәжірибеңізді осында жазыңыз..."></textarea>
+    </div>
+</section>
+  
+  <!-- 3 SECTION -->
+<section class="section">
+    <div class="illustration">
+        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e" alt="Металмен жұмыс">
+    </div>
+
+    <div class="section-text">
+        <h2>Натиже мен жетістік</h2>
+        <p>Дайын онім эскизге сайкес келді ме? Натиже сізді
+куантты ма? Бул жумыстан алган ен улкен сабагыныз
+не болды?</p>
+        <textarea placeholder="Оз жетістігінізді сипаттаныз..."></textarea>
+    </div>
+</section>
+
+<!-- FEEDBACK -->
+
+<section class="feedback">
+    <h2>Бүгінгі сабақ қалай өтті?</h2>
+
+    <div class="mood-container">
+        <div class="mood">
+            <span>🤩</span>
+            Керемет
+        </div>
+        <div class="mood">
+            <span>😊</span>
+            Жақсы
+        </div>
+        <div class="mood">
+            <span>🤔</span>
+            Орташа
+        </div>
+        <div class="mood">
+            <span>😵</span>
+            Қиын
+        </div>
+
+        <button class="button-primary">✨ AI Репортаж жасау</button><br>
+        <button 
+style="
+background:#ffffff;
+border:none;
+padding:16px 45px;
+border-radius:14px;
+color:#1e1b4b;
+font-size:17px;
+cursor:pointer;
+box-shadow:0 4px 12px rgba(0,0,0,0.15);
+font-weight:600;
+">
+Нәтижені сақтау
+</button>
+</section>
+
+</body>
+</html>
